@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<ResearchProjectDef>
+		<defName>D9StoneseedRes</defName>
+		<label>stoneseed</label>
+		<description>Plant stoneseed, a colonial organism which can slowly produce soft stone chunks.</description>
+		<baseCost>1200</baseCost>
+		<techLevel>Medieval</techLevel>
+		<researchViewX>1</researchViewX>
+		<researchViewY>3.75</researchViewY>
+	</ResearchProjectDef>
+</Defs>

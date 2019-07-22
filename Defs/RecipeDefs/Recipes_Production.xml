@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<RecipeDef>
+		<defName>Make_NeutroamineD9</defName>
+		<label>make neutroamine from dreamvine</label>
+		<description>Make three units of neutroamine from five dreamvine roots and fifteen chemfuel.</description>
+		<jobString>Making neutroamine from dreamvine.</jobString>
+		<effectWorking>Cremate</effectWorking>
+		<soundWorking>Recipe_Cremate</soundWorking>
+		<workAmount>1350</workAmount>
+		<workSpeedStat>DrugSynthesisSpeed</workSpeedStat>
+		<workSkill>Intellectual</workSkill>
+		<researchPrerequisite>MedicineProduction</researchPrerequisite>
+		<skillRequirements>
+			<Crafting>6</Crafting>
+			<Intellectual>4</Intellectual>
+	    </skillRequirements>
+		<recipeUsers>
+			<li>DrugLab</li>
+		</recipeUsers>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>D9DreamvineRoot</li>
+					</thingDefs>
+				</filter>
+				<count>5</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Chemfuel</li>
+					</thingDefs>
+				</filter>
+				<count>15</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>D9DreamvineRoot</li>
+				<li>Chemfuel</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<Neutroamine>3</Neutroamine>
+		</products>
+	</RecipeDef>
+	<RecipeDef>
+		<defName>Make_NeutroamineD9_Bulk</defName>
+		<label>make neutroamine from dreamvine in bulk</label>
+		<description>Make fifteen units of neutroamine from dreamvine roots and chemfuel.</description>
+		<jobString>Making neutroamine from dreamvine.</jobString>
+		<effectWorking>Cremate</effectWorking>
+		<soundWorking>Recipe_Cremate</soundWorking>
+		<workAmount>5400</workAmount>
+		<workSpeedStat>DrugSynthesisSpeed</workSpeedStat>
+		<workSkill>Intellectual</workSkill>
+		<researchPrerequisite>MedicineProduction</researchPrerequisite>
+		<skillRequirements>
+			<Crafting>6</Crafting>
+			<Intellectual>4</Intellectual>
+	    </skillRequirements>
+		<recipeUsers>
+			<li>DrugLab</li>
+		</recipeUsers>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>D9DreamvineRoot</li>
+					</thingDefs>
+				</filter>
+				<count>25</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Chemfuel</li>
+					</thingDefs>
+				</filter>
+				<count>75</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>D9DreamvineRoot</li>
+				<li>Chemfuel</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<Neutroamine>15</Neutroamine>
+		</products>
+	</RecipeDef>
+</Defs>

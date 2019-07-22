@@ -1,0 +1,137 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>  
+  <!-- Dreamvine Root
+	   credit TropiCKAPP for the (abandoned) textures for this and the plant -->
+  <ThingDef ParentName="RoughPlantBase">
+    <defName>D9DreamvineRoot</defName>
+    <label>dreamvine root</label>
+    <description>Roots of the dreamvine plant. Can be brewed into a hallucinogenic tea or processed into neutroamine, a precursor for industrial medicine.</description>
+    <graphicData>
+      <texPath>Things/Items/DreamVineRoot</texPath>
+    </graphicData>
+    <statBases>
+      <MarketValue>2</MarketValue>
+      <Flammability>1.5</Flammability>
+    </statBases>
+    <comps>
+      <li Class="CompProperties_Rottable">
+        <daysToRotStart>70</daysToRotStart>
+        <rotDestroys>true</rotDestroys>
+      </li>
+    </comps>
+    <thingCategories>
+      <li>PlantMatter</li>
+    </thingCategories>
+    <ingestible>
+      <preferability>DesperateOnly</preferability>
+    </ingestible>
+  </ThingDef>
+  <!-- Pumice and all related items/recipes -->
+  <ThingDef ParentName="ChunkRockBase">
+    <defName>ChunkD9Pumice</defName>
+    <label>pumice chunk</label>
+	<description>A chunk of pumice, a light and soft volcanic rock.</description>
+    <graphicData>
+      <color>(209,194,187)</color>
+    </graphicData>
+    <statBases>
+      <Mass>5</Mass>
+    </statBases>
+    <soundDrop>ChunkRock_Drop</soundDrop>
+    <butcherProducts>
+      <BlocksD9Pumice>20</BlocksD9Pumice>
+    </butcherProducts>
+  </ThingDef>
+  
+  <ThingDef ParentName="StoneBlocksBase">
+    <defName>BlocksD9Pumice</defName>
+    <label>pumice blocks</label>
+    <description>Blocks of pumice. Pumice is incredibly soft and composed largely of air. Its intricate collection of internal tubes makes it fairly beautiful.</description>
+    <graphicData>
+      <color>(126,104,94)</color>
+    </graphicData>
+    <statBases>
+      <Mass>0.25</Mass>
+      <SharpDamageMultiplier>0.3</SharpDamageMultiplier>
+    </statBases>
+    <stuffProps>
+      <color>(209,194,187)</color>
+      <soundImpactStuff>BulletImpact_Ground</soundImpactStuff>
+      <soundMeleeHitSharp>MeleeHit_Stone</soundMeleeHitSharp>
+      <soundMeleeHitBlunt>MeleeHit_Stone</soundMeleeHitBlunt>
+      <stuffAdjective>pumice</stuffAdjective>
+      <statFactors>
+        <Beauty>1.2</Beauty>  
+        <MaxHitPoints>0.7</MaxHitPoints>
+		<WorkToBuild>0.6</WorkToBuild>
+		<WorkToMake>0.8</WorkToMake>
+      </statFactors>
+    </stuffProps>
+  </ThingDef>
+
+	<RecipeDef>
+		<defName>Make_StoneBlocksD9Pumice</defName>
+		<label>make pumice blocks</label>
+		<description>Cuts pumice chunks into usable blocks.</description>
+		<jobString>Cutting stone blocks from chunk.</jobString>
+		<workAmount>700</workAmount>
+		<workSpeedStat>UnskilledLaborSpeed</workSpeedStat>
+		<effectWorking>CutStone</effectWorking>
+		<soundWorking>Recipe_MakeStoneBlocks</soundWorking>
+		<targetCountAdjustment>20</targetCountAdjustment>
+		<recipeUsers>
+			<li>TableStonecutter</li>
+		</recipeUsers>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ChunkD9Pumice</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>ChunkD9Pumice</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<BlocksD9Pumice>20</BlocksD9Pumice>
+		</products>
+	</RecipeDef>
+	<RecipeDef>
+		<defName>Make_StoneBlocksD9PumiceBulk</defName>
+		<label>make pumice blocks</label>
+		<description>Cuts pumice chunks into usable blocks.</description>
+		<jobString>Cutting stone blocks from chunks.</jobString>
+		<workAmount>1680</workAmount>
+		<workSpeedStat>UnskilledLaborSpeed</workSpeedStat>
+		<effectWorking>CutStone</effectWorking>
+		<soundWorking>Recipe_MakeStoneBlocks</soundWorking>
+		<targetCountAdjustment>20</targetCountAdjustment>
+		<recipeUsers>
+			<li>TableStonecutter</li>
+		</recipeUsers>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ChunkD9Pumice</li>
+					</thingDefs>
+				</filter>
+				<count>3</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>ChunkD9Pumice</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<BlocksD9Pumice>60</BlocksD9Pumice>
+		</products>
+	</RecipeDef>
+	
+</Defs>
