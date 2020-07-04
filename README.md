@@ -5,5 +5,5 @@
 
 Mod adding miscellaneous materials to Rimworld, including a new psychoactive crop, neutroamine production, and growable (weak) stone chunks.
 
-# Credits
+## Credits
 - Dreamroot's old name ("dreamvine") and texture (lightly modified) were taken from kaptain_kavern's [TropiCKAPP Rainforest Mod](https://steamcommunity.com/sharedfiles/filedetails/?id=1110093272) without permission. I did attempt to contact the author and received no response after months, but this is still unethical and I apologize. Dreamroot has a custom texture and has been redesigned completely.

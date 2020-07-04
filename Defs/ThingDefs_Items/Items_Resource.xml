@@ -39,8 +39,7 @@
     <butcherProducts>
       <D9MM_BlocksPumice>20</D9MM_BlocksPumice>
     </butcherProducts>
-  </ThingDef>
-  
+  </ThingDef>  
   <ThingDef ParentName="StoneBlocksBase">
     <defName>D9MM_BlocksPumice</defName>
     <label>pumice blocks</label>
@@ -66,70 +65,4 @@
       </statFactors>
     </stuffProps>
   </ThingDef>
-
-	<RecipeDef>
-		<defName>D9MM_MakeBlocksPumice</defName>
-		<label>make pumice blocks</label>
-		<description>Cuts pumice chunks into usable blocks.</description>
-		<jobString>Cutting stone blocks from chunk.</jobString>
-		<workAmount>700</workAmount>
-		<workSpeedStat>UnskilledLaborSpeed</workSpeedStat>
-		<effectWorking>CutStone</effectWorking>
-		<soundWorking>Recipe_MakeStoneBlocks</soundWorking>
-		<targetCountAdjustment>20</targetCountAdjustment>
-		<recipeUsers>
-			<li>TableStonecutter</li>
-		</recipeUsers>
-		<ingredients>
-			<li>
-				<filter>
-					<thingDefs>
-						<li>D9MM_ChunkPumice</li>
-					</thingDefs>
-				</filter>
-				<count>1</count>
-			</li>
-		</ingredients>
-		<fixedIngredientFilter>
-			<thingDefs>
-				<li>D9MM_ChunkPumice</li>
-			</thingDefs>
-		</fixedIngredientFilter>
-		<products>
-			<D9MM_BlocksPumice>20</D9MM_BlocksPumice>
-		</products>
-	</RecipeDef>
-	<RecipeDef>
-		<defName>D9MM_MakeBlocksPumice_Bulk</defName>
-		<label>make pumice blocks</label>
-		<description>Cuts pumice chunks into usable blocks.</description>
-		<jobString>Cutting stone blocks from chunks.</jobString>
-		<workAmount>1680</workAmount>
-		<workSpeedStat>UnskilledLaborSpeed</workSpeedStat>
-		<effectWorking>CutStone</effectWorking>
-		<soundWorking>Recipe_MakeStoneBlocks</soundWorking>
-		<targetCountAdjustment>20</targetCountAdjustment>
-		<recipeUsers>
-			<li>TableStonecutter</li>
-		</recipeUsers>
-		<ingredients>
-			<li>
-				<filter>
-					<thingDefs>
-						<li>D9MM_ChunkPumice</li>
-					</thingDefs>
-				</filter>
-				<count>3</count>
-			</li>
-		</ingredients>
-		<fixedIngredientFilter>
-			<thingDefs>
-				<li>D9MM_ChunkPumice</li>
-			</thingDefs>
-		</fixedIngredientFilter>
-		<products>
-			<D9MM_BlocksPumice>60</D9MM_BlocksPumice>
-		</products>
-	</RecipeDef>
-	
 </Defs>
