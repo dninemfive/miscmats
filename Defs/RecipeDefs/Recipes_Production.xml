@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
 	<RecipeDef>
-		<defName>Make_NeutroamineD9</defName>
-		<label>make neutroamine from dreamvine</label>
-		<description>Make three units of neutroamine from five dreamvine roots and fifteen chemfuel.</description>
-		<jobString>Making neutroamine from dreamvine.</jobString>
+		<defName>D9MM_MakeNeutroamine</defName>
+		<label>make neutroamine from dreamroot</label>
+		<description>Make three units of neutroamine from five dreamroot roots and fifteen chemfuel.</description>
+		<jobString>Making neutroamine from dreamroot.</jobString>
 		<effectWorking>Cremate</effectWorking>
 		<soundWorking>Recipe_Cremate</soundWorking>
 		<workAmount>1350</workAmount>
 		<workSpeedStat>DrugSynthesisSpeed</workSpeedStat>
 		<workSkill>Intellectual</workSkill>
-		<researchPrerequisite>MedicineProduction</researchPrerequisite>
+		<researchPrerequisite>D9MM_NeutroamineProduction</researchPrerequisite>
 		<skillRequirements>
 			<Crafting>6</Crafting>
 			<Intellectual>4</Intellectual>
@@ -22,7 +22,7 @@
 			<li>
 				<filter>
 					<thingDefs>
-						<li>D9DreamvineRoot</li>
+						<li>D9MM_Dreamroot</li>
 					</thingDefs>
 				</filter>
 				<count>5</count>
@@ -38,7 +38,7 @@
 		</ingredients>
 		<fixedIngredientFilter>
 			<thingDefs>
-				<li>D9DreamvineRoot</li>
+				<li>D9MM_Dreamroot</li>
 				<li>Chemfuel</li>
 			</thingDefs>
 		</fixedIngredientFilter>
@@ -47,16 +47,16 @@
 		</products>
 	</RecipeDef>
 	<RecipeDef>
-		<defName>Make_NeutroamineD9_Bulk</defName>
-		<label>make neutroamine from dreamvine in bulk</label>
-		<description>Make fifteen units of neutroamine from dreamvine roots and chemfuel.</description>
-		<jobString>Making neutroamine from dreamvine.</jobString>
+		<defName>D9MM_MakeNeutroamine_Bulk</defName>
+		<label>make neutroamine from dreamroot in bulk</label>
+		<description>Make fifteen units of neutroamine from dreamroot roots and chemfuel.</description>
+		<jobString>Making neutroamine from dreamroot.</jobString>
 		<effectWorking>Cremate</effectWorking>
 		<soundWorking>Recipe_Cremate</soundWorking>
 		<workAmount>5400</workAmount>
 		<workSpeedStat>DrugSynthesisSpeed</workSpeedStat>
 		<workSkill>Intellectual</workSkill>
-		<researchPrerequisite>MedicineProduction</researchPrerequisite>
+		<researchPrerequisite>D9MM_NeutroamineProduction</researchPrerequisite>
 		<skillRequirements>
 			<Crafting>6</Crafting>
 			<Intellectual>4</Intellectual>
@@ -68,7 +68,7 @@
 			<li>
 				<filter>
 					<thingDefs>
-						<li>D9DreamvineRoot</li>
+						<li>D9MM_Dreamroot</li>
 					</thingDefs>
 				</filter>
 				<count>25</count>
@@ -84,7 +84,7 @@
 		</ingredients>
 		<fixedIngredientFilter>
 			<thingDefs>
-				<li>D9DreamvineRoot</li>
+				<li>D9MM_Dreamroot</li>
 				<li>Chemfuel</li>
 			</thingDefs>
 		</fixedIngredientFilter>

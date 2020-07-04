@@ -1,12 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
+	<ResearchTabDef>
+		<defName>D9MM_ResearchTab</defName>
+		<label>Miscellaneous Materials</label>
+	</ResearchTabDef>
 	<ResearchProjectDef>
-		<defName>D9StoneseedRes</defName>
+		<defName>D9MM_Stoneseed</defName>
 		<label>stoneseed</label>
 		<description>Plant stoneseed, a colonial organism which can slowly produce soft stone chunks.</description>
 		<baseCost>1200</baseCost>
 		<techLevel>Medieval</techLevel>
-		<researchViewX>1</researchViewX>
-		<researchViewY>3.75</researchViewY>
+		<researchViewX>0</researchViewX>
+		<researchViewY>0</researchViewY>
+	</ResearchProjectDef>
+	<!-- TODO: some way of making this available to tribals? -->
+	<ResearchProjectDef>
+		<defName>D9MM_NeutroamineProduction</defName>
+		<label>neutroamine production</label>
+		<description>Learn to produce neutroamine from dreamroot.</description>
+		<baseCost>1200</baseCost>
+		<techLevel>Industrial</techLevel>
+		<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+		<researchViewX>0</researchViewX>
+		<researchViewY>0</researchViewY>
+		<prerequisites>
+		  <li>MedicineProduction</li>
+		</prerequisites>
 	</ResearchProjectDef>
 </Defs>

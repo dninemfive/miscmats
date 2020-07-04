@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
-	<!-- Dreamvine Tea and related concepts -->
+	<!-- Dreamroot Tea and related concepts -->
 	<ThingDef ParentName="MakeableDrugBase">
-    <defName>D9DreamvineTea</defName>
-    <label>dreamvine tea</label>
-    <description>A bitter tea brewed from dreamvine roots. Induces a powerful hallucinogenic trance but isn't very addictive. Hyperdosing causes temporary catatonia and a large immune response.</description>
+    <defName>D9MM_DreamrootTea</defName>
+    <label>dreamroot tea</label>
+    <description>A bitter tea brewed from dreamroot roots. Induces a powerful hallucinogenic trance but isn't very addictive. Hyperdosing causes temporary catatonia and a large immune response.</description>
     <graphicData>
       <texPath>Things/Item/Drug/Tea</texPath>
       <graphicClass>Graphic_StackCount</graphicClass>
@@ -36,7 +36,7 @@
       <ingestReportString>Drinking {0}.</ingestReportString>
       <outcomeDoers>
         <li Class="IngestionOutcomeDoer_GiveHediff">
-          <hediffDef>D9DreamvineHigh</hediffDef>
+          <hediffDef>D9MM_DreamrootHigh</hediffDef>
           <severity>0.6</severity>
         </li>
         <li Class="IngestionOutcomeDoer_OffsetNeed">
@@ -65,15 +65,15 @@
       </skillRequirements>
     </recipeMaker>
     <costList>
-      <D9DreamvineRoot>2</D9DreamvineRoot>
+      <D9MM_Dreamroot>2</D9MM_Dreamroot>
     </costList>
   </ThingDef>
   
   <HediffDef>
-    <defName>D9DreamvineHigh</defName>
+    <defName>D9MM_DreamrootHigh</defName>
     <hediffClass>HediffWithComps</hediffClass>
-    <label>high on dreamvine</label>
-    <labelNoun>a dreamvine high</labelNoun>
+    <label>high on dreamroot</label>
+    <labelNoun>a dreamroot high</labelNoun>
     <defaultLabelColor>(0.545,0.25,0.545)</defaultLabelColor>
     <scenarioCanAdd>true</scenarioCanAdd>
     <maxSeverity>1.0</maxSeverity>
@@ -132,13 +132,13 @@
   </HediffDef>
   
   <ThoughtDef>
-    <defName>D9DreamvineHighThought</defName>
+    <defName>D9MM_DreamrootHighThought</defName>
     <workerClass>ThoughtWorker_Hediff</workerClass>
-    <hediff>D9DreamvineHigh</hediff>
+    <hediff>D9MM_DreamrootHigh</hediff>
     <validWhileDespawned>true</validWhileDespawned>
     <stages>
       <li>
-        <label>dreamvine tea</label>
+        <label>dreamroot tea</label>
         <description>I feel strange and can hear otherworldly voices. Somehow, I'm not worried.</description>
         <baseMoodEffect>25</baseMoodEffect>
       </li>

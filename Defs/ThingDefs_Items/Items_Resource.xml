@@ -1,11 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<Defs>  
-  <!-- Dreamvine Root
-	   credit TropiCKAPP for the (abandoned) textures for this and the plant -->
+<Defs> 
   <ThingDef ParentName="RoughPlantBase">
-    <defName>D9DreamvineRoot</defName>
-    <label>dreamvine root</label>
-    <description>Roots of the dreamvine plant. Can be brewed into a hallucinogenic tea or processed into neutroamine, a precursor for industrial medicine.</description>
+    <defName>D9MM_Dreamroot</defName>
+    <label>dreamroot</label>
+    <description>Roots of the dreamroot plant. Can be brewed into a hallucinogenic tea or processed into neutroamine, a precursor for industrial medicine.</description>
     <graphicData>
       <texPath>Things/Items/DreamVineRoot</texPath>
     </graphicData>
@@ -28,7 +26,7 @@
   </ThingDef>
   <!-- Pumice and all related items/recipes -->
   <ThingDef ParentName="ChunkRockBase">
-    <defName>ChunkD9Pumice</defName>
+    <defName>D9MM_ChunkPumice</defName>
     <label>pumice chunk</label>
 	<description>A chunk of pumice, a light and soft volcanic rock.</description>
     <graphicData>
@@ -39,12 +37,12 @@
     </statBases>
     <soundDrop>ChunkRock_Drop</soundDrop>
     <butcherProducts>
-      <BlocksD9Pumice>20</BlocksD9Pumice>
+      <D9MM_BlocksPumice>20</D9MM_BlocksPumice>
     </butcherProducts>
   </ThingDef>
   
   <ThingDef ParentName="StoneBlocksBase">
-    <defName>BlocksD9Pumice</defName>
+    <defName>D9MM_BlocksPumice</defName>
     <label>pumice blocks</label>
     <description>Blocks of pumice. Pumice is incredibly soft and composed largely of air. Its intricate collection of internal tubes makes it fairly beautiful.</description>
     <graphicData>
@@ -70,7 +68,7 @@
   </ThingDef>
 
 	<RecipeDef>
-		<defName>Make_StoneBlocksD9Pumice</defName>
+		<defName>D9MM_MakeBlocksPumice</defName>
 		<label>make pumice blocks</label>
 		<description>Cuts pumice chunks into usable blocks.</description>
 		<jobString>Cutting stone blocks from chunk.</jobString>
@@ -86,7 +84,7 @@
 			<li>
 				<filter>
 					<thingDefs>
-						<li>ChunkD9Pumice</li>
+						<li>D9MM_ChunkPumice</li>
 					</thingDefs>
 				</filter>
 				<count>1</count>
@@ -94,15 +92,15 @@
 		</ingredients>
 		<fixedIngredientFilter>
 			<thingDefs>
-				<li>ChunkD9Pumice</li>
+				<li>D9MM_ChunkPumice</li>
 			</thingDefs>
 		</fixedIngredientFilter>
 		<products>
-			<BlocksD9Pumice>20</BlocksD9Pumice>
+			<D9MM_BlocksPumice>20</D9MM_BlocksPumice>
 		</products>
 	</RecipeDef>
 	<RecipeDef>
-		<defName>Make_StoneBlocksD9PumiceBulk</defName>
+		<defName>D9MM_MakeBlocksPumice_Bulk</defName>
 		<label>make pumice blocks</label>
 		<description>Cuts pumice chunks into usable blocks.</description>
 		<jobString>Cutting stone blocks from chunks.</jobString>
@@ -118,7 +116,7 @@
 			<li>
 				<filter>
 					<thingDefs>
-						<li>ChunkD9Pumice</li>
+						<li>D9MM_ChunkPumice</li>
 					</thingDefs>
 				</filter>
 				<count>3</count>
@@ -126,11 +124,11 @@
 		</ingredients>
 		<fixedIngredientFilter>
 			<thingDefs>
-				<li>ChunkD9Pumice</li>
+				<li>D9MM_ChunkPumice</li>
 			</thingDefs>
 		</fixedIngredientFilter>
 		<products>
-			<BlocksD9Pumice>60</BlocksD9Pumice>
+			<D9MM_BlocksPumice>60</D9MM_BlocksPumice>
 		</products>
 	</RecipeDef>
 	

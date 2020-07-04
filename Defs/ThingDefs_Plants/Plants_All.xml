@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
 	<ThingDef ParentName="PlantBase">
-		<defName>Plant_D9_Dreamvine</defName>
-		<label>dreamvine plant</label>
+		<defName>Plant_D9MM_Dreamroot</defName>
+		<label>dreamroot plant</label>
 		<description>A hardy but slow-growing plant whose roots contain a psychoactive sap which can be brewed into tea or refined into neutroamine.</description>
 		<statBases>
 			<MaxHitPoints>115</MaxHitPoints>
@@ -21,7 +21,7 @@
 			<dieIfLeafless>true</dieIfLeafless>
 			<maxMeshCount>4</maxMeshCount>
 			<harvestTag>Standard</harvestTag>
-			<harvestedThingDef>D9DreamvineRoot</harvestedThingDef>
+			<harvestedThingDef>D9MM_Dreamroot</harvestedThingDef>
 			<harvestYield>3</harvestYield>
 			<sowTags>
 				<li>Ground</li>
@@ -39,7 +39,7 @@
 		</plant>
 	</ThingDef>
 	<ThingDef ParentName="PlantBase">
-		<defName>Plant_D9_Stoneseed</defName>
+		<defName>Plant_D9MM_Stoneseed</defName>
 		<label>stoneseed plant</label>
 		<description>A strange genetically-engineered pseudoplant consisting of many tiny coral-related animals which build rocklike homes from stony materials in soil.\n\nIt grows very slowly, and better in poor than fertile soil.</description>
 		<statBases>
@@ -63,7 +63,7 @@
 			<dieIfLeafless>false</dieIfLeafless>
 			<maxMeshCount>1</maxMeshCount>
 			<harvestTag>Standard</harvestTag>
-			<harvestedThingDef>ChunkD9Pumice</harvestedThingDef>
+			<harvestedThingDef>D9MM_ChunkPumice</harvestedThingDef>
 			<harvestYield>1</harvestYield>
 			<sowTags>
 				<li>Ground</li>
@@ -76,7 +76,7 @@
 			<growDays>18</growDays>
 			<sowMinSkill>11</sowMinSkill>
 			<sowResearchPrerequisites>
-				<li>D9StoneseedRes</li>
+				<li>D9MM_Stoneseed</li>
 			</sowResearchPrerequisites>
 			<growMinGlow>0</growMinGlow>
 			<growOptimalGlow>0.5</growOptimalGlow>
