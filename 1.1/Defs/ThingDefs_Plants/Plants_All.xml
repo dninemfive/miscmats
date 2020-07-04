@@ -84,5 +84,8 @@
 				<max>1</max>
 			</visualSizeRange>
 		</plant>
+		<modExtensions>
+			<li Class="D9Framework.UseNegativeFertility"/>
+		</modExtensions>
 	</ThingDef>
 </Defs>
