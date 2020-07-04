@@ -7,7 +7,7 @@
 		<jobString>Making neutroamine from dreamvine.</jobString>
 		<effectWorking>Cremate</effectWorking>
 		<soundWorking>Recipe_Cremate</soundWorking>
-		<workAmount>1350</workAmount>
+		<workAmount>2700</workAmount>
 		<workSpeedStat>DrugSynthesisSpeed</workSpeedStat>
 		<workSkill>Intellectual</workSkill>
 		<researchPrerequisite>MedicineProduction</researchPrerequisite>
@@ -53,7 +53,7 @@
 		<jobString>Making neutroamine from dreamvine.</jobString>
 		<effectWorking>Cremate</effectWorking>
 		<soundWorking>Recipe_Cremate</soundWorking>
-		<workAmount>5400</workAmount>
+		<workAmount>12150</workAmount>
 		<workSpeedStat>DrugSynthesisSpeed</workSpeedStat>
 		<workSkill>Intellectual</workSkill>
 		<researchPrerequisite>MedicineProduction</researchPrerequisite>
