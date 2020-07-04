@@ -74,6 +74,7 @@
     <hediffClass>HediffWithComps</hediffClass>
     <label>high on dreamroot</label>
     <labelNoun>a dreamroot high</labelNoun>
+	<description>Active dreamroot tea in the bloodstream. Generates a strong psychedelic effect.</description>
     <defaultLabelColor>(0.545,0.25,0.545)</defaultLabelColor>
     <scenarioCanAdd>true</scenarioCanAdd>
     <maxSeverity>1.0</maxSeverity>

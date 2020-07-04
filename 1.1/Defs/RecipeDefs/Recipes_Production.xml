@@ -100,7 +100,7 @@
 		<description>Cuts pumice chunks into usable blocks.</description>
 		<jobString>Cutting stone blocks from chunk.</jobString>
 		<workAmount>700</workAmount>
-		<workSpeedStat>UnskilledLaborSpeed</workSpeedStat>
+		<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
 		<effectWorking>CutStone</effectWorking>
 		<soundWorking>Recipe_MakeStoneBlocks</soundWorking>
 		<targetCountAdjustment>20</targetCountAdjustment>
@@ -132,7 +132,7 @@
 		<description>Cuts pumice chunks into usable blocks.</description>
 		<jobString>Cutting stone blocks from chunks.</jobString>
 		<workAmount>1680</workAmount>
-		<workSpeedStat>UnskilledLaborSpeed</workSpeedStat>
+		<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
 		<effectWorking>CutStone</effectWorking>
 		<soundWorking>Recipe_MakeStoneBlocks</soundWorking>
 		<targetCountAdjustment>20</targetCountAdjustment>
