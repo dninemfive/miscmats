@@ -46,7 +46,6 @@
 			<MaxHitPoints>200</MaxHitPoints>
 			<Nutrition>0</Nutrition>
 		</statBases>
-		<thingClass>MiscMats.PlantInvFert</thingClass>
 		<graphicData>
 			<texPath>Things/Plant/Stoneseed</texPath>
 			<graphicClass>Graphic_Random</graphicClass>
