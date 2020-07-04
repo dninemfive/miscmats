@@ -7,7 +7,7 @@
     <label>dreamvine root</label>
     <description>Roots of the dreamvine plant. Can be brewed into a hallucinogenic tea or processed into neutroamine, a precursor for industrial medicine.</description>
     <graphicData>
-      <texPath>Things/Items/DreamVineRoot</texPath>
+      <texPath>Items/Dreamroot</texPath>
     </graphicData>
     <statBases>
       <MarketValue>2</MarketValue>
