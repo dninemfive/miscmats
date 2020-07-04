@@ -79,7 +79,9 @@
 			<visualSizeRange>0.3~1.0</visualSizeRange>
 		</plant>
 		<modExtensions>
-			<li Class="D9Framework.UseNegativeFertility"/>
+			<li Class="D9Framework.UseNegativeFertility">
+				<maxFertility>5</maxFertility> <!-- In practice, will never be above the highest natural value, generally 1.4 -->
+			</li>
 		</modExtensions>
 	</ThingDef>
 </Defs>
