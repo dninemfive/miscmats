@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<!-- Dreamvine Tea and related concepts -->
+	<ThingDef ParentName="MakeableDrugBase">
+    <defName>D9DreamvineTea</defName>
+    <label>dreamvine tea</label>
+    <description>A bitter tea brewed from dreamvine roots. Induces a powerful hallucinogenic trance but isn't very addictive. Hyperdosing causes temporary catatonia and a large immune response.</description>
+    <graphicData>
+      <texPath>Things/Item/Drug/Tea</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+      <drawSize>0.88</drawSize>
+    </graphicData>
+    <rotatable>false</rotatable>
+    <statBases>
+      <WorkToMake>500</WorkToMake>
+      <MarketValue>8</MarketValue>
+      <Mass>0.05</Mass>
+      <DeteriorationRate>6</DeteriorationRate>
+    </statBases>
+    <techLevel>Neolithic</techLevel>
+    <ingestible>
+      <foodType>Fluid, Processed</foodType>
+      <joyKind>Chemical</joyKind>
+      <joy>0.6</joy>
+      <baseIngestTicks>240</baseIngestTicks>
+      <nurseable>true</nurseable>
+      <drugCategory>Social</drugCategory>
+      <ingestSound>Ingest_Drink</ingestSound>
+      <ingestHoldOffsetStanding>
+        <northDefault>
+          <offset>(0.18,0,0)</offset>
+        </northDefault>
+      </ingestHoldOffsetStanding>
+      <ingestHoldUsesTable>false</ingestHoldUsesTable>
+      <ingestCommandString>Drink {0}</ingestCommandString>
+      <ingestReportString>Drinking {0}.</ingestReportString>
+      <outcomeDoers>
+        <li Class="IngestionOutcomeDoer_GiveHediff">
+          <hediffDef>D9DreamvineHigh</hediffDef>
+          <severity>0.6</severity>
+        </li>
+        <li Class="IngestionOutcomeDoer_OffsetNeed">
+          <need>Rest</need>
+          <offset>-0.1</offset>
+        </li>
+      </outcomeDoers>
+    </ingestible>
+	<comps>
+      <li Class="CompProperties_Drug">
+        <addictiveness>0</addictiveness>
+        <listOrder>901</listOrder>
+     </li>
+	</comps>
+    <recipeMaker>
+	  <researchPrerequisite>PsychoidBrewing</researchPrerequisite>
+      <recipeUsers>
+        <li>Campfire</li>
+        <li>ElectricStove</li>
+        <li>FueledStove</li>
+      </recipeUsers>
+      <workSpeedStat>DrugCookingSpeed</workSpeedStat>
+      <workSkill>Cooking</workSkill>
+      <skillRequirements>
+        <Cooking>2</Cooking>
+      </skillRequirements>
+    </recipeMaker>
+    <costList>
+      <D9DreamvineRoot>2</D9DreamvineRoot>
+    </costList>
+  </ThingDef>
+  
+  <HediffDef>
+    <defName>D9DreamvineHigh</defName>
+    <hediffClass>HediffWithComps</hediffClass>
+    <label>high on dreamvine</label>
+    <labelNoun>a dreamvine high</labelNoun>
+    <defaultLabelColor>(0.545,0.25,0.545)</defaultLabelColor>
+    <scenarioCanAdd>true</scenarioCanAdd>
+    <maxSeverity>1.0</maxSeverity>
+    <isBad>false</isBad>
+    <comps>
+      <li Class="HediffCompProperties_SeverityPerDay">
+        <severityPerDay>-6.0</severityPerDay>
+      </li>
+    </comps>
+      <stages>
+		<li>
+			<label>initial-hidden</label>
+			<becomeVisible>false</becomeVisible>
+		</li>
+		<li>
+			<minSeverity>0.05</minSeverity>
+			<label>intoxicated</label>
+			<painFactor>0.9</painFactor>
+			<restFallFactor>1.1</restFallFactor>
+			<socialFightChanceFactor>0.6</socialFightChanceFactor>
+			<statOffsets>
+				<PsychicSensitivity>1</PsychicSensitivity>
+			</statOffsets>
+			<capMods>
+				<li>
+					<capacity>Consciousness</capacity>
+					<postFactor>0.9</postFactor>
+				</li>
+				<li>
+					<capacity>BloodFiltration</capacity>
+					<offset>0.2</offset>
+				</li>
+			</capMods>
+		</li>
+			<li>
+				<minSeverity>0.8</minSeverity>
+				<label>stupefied</label>
+				<painFactor>0.8</painFactor>
+				<restFallFactor>1.25</restFallFactor>
+				<socialFightChanceFactor>0</socialFightChanceFactor>
+				<statOffsets>
+					<PsychicSensitivity>1.5</PsychicSensitivity>
+				</statOffsets>
+				<capMods>
+					<li>
+						<capacity>Consciousness</capacity>
+						<postFactor>0.6</postFactor>
+					</li>
+					<li>
+						<capacity>BloodFiltration</capacity>
+						<offset>0.35</offset>
+					</li>
+				</capMods>
+			</li>
+      </stages>
+  </HediffDef>
+  
+  <ThoughtDef>
+    <defName>D9DreamvineHighThought</defName>
+    <workerClass>ThoughtWorker_Hediff</workerClass>
+    <hediff>D9DreamvineHigh</hediff>
+    <validWhileDespawned>true</validWhileDespawned>
+    <stages>
+      <li>
+        <label>dreamvine tea</label>
+        <description>I feel strange and can hear otherworldly voices. Somehow, I'm not worried.</description>
+        <baseMoodEffect>25</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+</Defs>

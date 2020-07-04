@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<ThingDef ParentName="PlantBase">
+		<defName>Plant_D9_Dreamvine</defName>
+		<label>dreamvine plant</label>
+		<description>A hardy but slow-growing plant whose roots contain a psychoactive sap which can be brewed into tea or refined into neutroamine.</description>
+		<statBases>
+			<MaxHitPoints>115</MaxHitPoints>
+			<Nutrition>0.14</Nutrition>
+			<Beauty>10</Beauty>
+		</statBases>
+		<graphicData>
+			<texPath>Things/Plant/DreamvinePlant</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+		</graphicData>
+		<selectable>true</selectable>
+		<pathCost>10</pathCost>
+		<ingestible />
+		<plant>
+			<fertilitySensitivity>0.9</fertilitySensitivity>
+			<dieIfLeafless>true</dieIfLeafless>
+			<maxMeshCount>4</maxMeshCount>
+			<harvestTag>Standard</harvestTag>
+			<harvestedThingDef>D9DreamvineRoot</harvestedThingDef>
+			<harvestYield>3</harvestYield>
+			<sowTags>
+				<li>Ground</li>
+				<li>Hydroponic</li>
+			</sowTags>
+			<topWindExposure>0.1</topWindExposure>
+			<growDays>11.5</growDays>
+			<visualSizeRange>
+				<min>0.3</min>
+				<max>0.8</max>
+			</visualSizeRange>
+			<wildOrder>2</wildOrder>
+			<purpose>Health</purpose>
+			<sowMinSkill>6</sowMinSkill>
+		</plant>
+	</ThingDef>
+	<ThingDef ParentName="PlantBase">
+		<defName>Plant_D9_Stoneseed</defName>
+		<label>stoneseed plant</label>
+		<description>A strange genetically-engineered pseudoplant consisting of many tiny coral-related animals which build rocklike homes from stony materials in soil.\n\nIt grows very slowly, and better in poor than fertile soil.</description>
+		<statBases>
+			<MaxHitPoints>200</MaxHitPoints>
+			<Nutrition>0</Nutrition>
+		</statBases>
+		<thingClass>MiscMats.PlantInvFert</thingClass>
+		<graphicData>
+			<texPath>Things/Plant/Stoneseed</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+		</graphicData>
+		<selectable>true</selectable>
+		<pathCost>10</pathCost>
+		<ingestible>
+			<preferability>NeverForNutrition</preferability>
+		</ingestible>
+		<plant>
+			<fertilitySensitivity>1</fertilitySensitivity>
+			<fertilityMin>0.01</fertilityMin>
+			<neverBlightable>true</neverBlightable>
+			<dieIfLeafless>false</dieIfLeafless>
+			<maxMeshCount>1</maxMeshCount>
+			<harvestTag>Standard</harvestTag>
+			<harvestedThingDef>ChunkD9Pumice</harvestedThingDef>
+			<harvestYield>1</harvestYield>
+			<sowTags>
+				<li>Ground</li>
+			</sowTags>
+			<sowWork>1200</sowWork>
+			<harvestWork>40</harvestWork>
+			<harvestMinGrowth>0.98</harvestMinGrowth> <!-- these can only ever yield one chunk, so avoid players cheesing yields -->
+			<harvestFailable>false</harvestFailable>
+			<topWindExposure>0</topWindExposure>
+			<growDays>18</growDays>
+			<sowMinSkill>11</sowMinSkill>
+			<sowResearchPrerequisites>
+				<li>D9StoneseedRes</li>
+			</sowResearchPrerequisites>
+			<growMinGlow>0</growMinGlow>
+			<growOptimalGlow>0.5</growOptimalGlow>
+			<visualSizeRange>
+				<min>0.3</min>
+				<max>1</max>
+			</visualSizeRange>
+		</plant>
+	</ThingDef>
+</Defs>
