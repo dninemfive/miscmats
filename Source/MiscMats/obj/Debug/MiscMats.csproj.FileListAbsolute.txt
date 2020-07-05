@@ -1,0 +1,8 @@
+C:\Users\dninemfive\Documents\mods\Rimworld\F1.0\Misc Mats\Source\MiscMats\bin\Debug\MiscMats.dll
+C:\Users\dninemfive\Documents\mods\Rimworld\F1.0\Misc Mats\Source\MiscMats\bin\Debug\MiscMats.pdb
+C:\Users\dninemfive\Documents\mods\Rimworld\F1.0\Misc Mats\Source\MiscMats\bin\Debug\UnityEngine.CoreModule.dll
+C:\Users\dninemfive\Documents\mods\Rimworld\F1.0\Misc Mats\Source\MiscMats\obj\Debug\MiscMats.csprojResolveAssemblyReference.cache
+C:\Users\dninemfive\Documents\mods\Rimworld\F1.0\Misc Mats\Source\MiscMats\obj\Debug\MiscMats.csproj.CoreCompileInputs.cache
+C:\Users\dninemfive\Documents\mods\Rimworld\F1.0\Misc Mats\Source\MiscMats\obj\Debug\MiscMats.csproj.CopyComplete
+C:\Users\dninemfive\Documents\mods\Rimworld\F1.0\Misc Mats\Source\MiscMats\obj\Debug\MiscMats.dll
+C:\Users\dninemfive\Documents\mods\Rimworld\F1.0\Misc Mats\Source\MiscMats\obj\Debug\MiscMats.pdb
