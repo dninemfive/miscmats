@@ -83,6 +83,7 @@
       <li Class="HediffCompProperties_SeverityPerDay">
         <severityPerDay>-6.0</severityPerDay>
       </li>
+	  <li Class="MiscMats.HediffCompProperties_Trip"/>
     </comps>
       <stages>
 		<li>
@@ -92,11 +93,11 @@
 		<li>
 			<minSeverity>0.05</minSeverity>
 			<label>intoxicated</label>
-			<painFactor>0.9</painFactor>
-			<restFallFactor>1.1</restFallFactor>
-			<socialFightChanceFactor>0.6</socialFightChanceFactor>
+			<socialFightChanceFactor>0.8</socialFightChanceFactor>
+			<restFallFactor>1.05</restFallFactor>
 			<statOffsets>
-				<PsychicSensitivity>1</PsychicSensitivity>
+				<PsychicSensitivity>0.1</PsychicSensitivity>
+				<MeditationFocusGain MayRequire="Ludeon.RimWorld.Royalty">0.05</MeditationFocusGain>
 			</statOffsets>
 			<capMods>
 				<li>
@@ -109,37 +110,69 @@
 				</li>
 			</capMods>
 		</li>
-			<li>
-				<minSeverity>0.8</minSeverity>
-				<label>stupefied</label>
-				<painFactor>0.8</painFactor>
-				<restFallFactor>1.25</restFallFactor>
-				<socialFightChanceFactor>0</socialFightChanceFactor>
-				<statOffsets>
-					<PsychicSensitivity>1.5</PsychicSensitivity>
-				</statOffsets>
-				<capMods>
-					<li>
-						<capacity>Consciousness</capacity>
-						<postFactor>0.6</postFactor>
-					</li>
-					<li>
-						<capacity>BloodFiltration</capacity>
-						<offset>0.35</offset>
-					</li>
-				</capMods>
-			</li>
+		<li>
+			<minSeverity>0.05</minSeverity>
+			<label>intoxicated</label>
+			<painFactor>0.9</painFactor>
+			<socialFightChanceFactor>0.6</socialFightChanceFactor>
+			<restFallFactor>1.1</restFallFactor>
+			<statOffsets>
+				<PsychicSensitivity>0.5</PsychicSensitivity>
+				<MeditationFocusGain MayRequire="Ludeon.RimWorld.Royalty">0.15</MeditationFocusGain>
+			</statOffsets>
+			<capMods>
+				<li>
+					<capacity>Consciousness</capacity>
+					<postFactor>0.75</postFactor>
+				</li>
+				<li>
+					<capacity>BloodFiltration</capacity>
+					<offset>0.25</offset>
+				</li>
+			</capMods>
+		</li>
+		<li>
+			<minSeverity>0.8</minSeverity>
+			<label>stupefied</label>
+			<painFactor>0.8</painFactor>
+			<socialFightChanceFactor>0</socialFightChanceFactor>
+			<restFallFactor>1.25</restFallFactor>
+			<statOffsets>
+				<PsychicSensitivity>1</PsychicSensitivity>
+				<MeditationFocusGain MayRequire="Ludeon.RimWorld.Royalty">0.3</MeditationFocusGain>
+			</statOffsets>
+			<capMods>
+				<li>
+					<capacity>Consciousness</capacity>
+					<postFactor>0.6</postFactor>
+				</li>
+				<li>
+					<capacity>BloodFiltration</capacity>
+					<offset>0.35</offset>
+				</li>
+			</capMods>
+		</li>
       </stages>
   </HediffDef>
   
   <ThoughtDef>
     <defName>D9MM_DreamrootHighThought</defName>
-    <workerClass>ThoughtWorker_Hediff</workerClass>
+    <workerClass>MiscMats.ThoughtWorker_Trip</workerClass>
     <hediff>D9MM_DreamrootHigh</hediff>
     <validWhileDespawned>true</validWhileDespawned>
     <stages>
       <li>
-        <label>dreamroot tea</label>
+        <label>bad trip</label>
+        <description>I feel strange and can hear otherworldly voices. Somehow, I'm not worried.</description>
+        <baseMoodEffect>-25</baseMoodEffect>
+      </li>
+      <li>
+        <label>mediocre trip</label>
+        <description>I feel strange and can hear otherworldly voices. Somehow, I'm not worried.</description>
+        <baseMoodEffect>3</baseMoodEffect>
+      </li>
+      <li>
+        <label>good trip</label>
         <description>I feel strange and can hear otherworldly voices. Somehow, I'm not worried.</description>
         <baseMoodEffect>25</baseMoodEffect>
       </li>

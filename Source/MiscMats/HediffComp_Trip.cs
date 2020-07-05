@@ -56,7 +56,7 @@ namespace MiscMats
             //  - chance for inspiration based on trip quality (0 for neutral or less; increasing as it gets better)
             //  - negative mental states with a negative trip quality
             // - transient thoughts? would be selected by weight from a small list, or perhaps with a RulePackDef or smth
-            // - stat offsets: reduced consciousness, sight; increased blood filtration, psychic sensitivity, (Royalty) psycasting recovery rate
+            //  - stat offsets: reduced consciousness; increased blood filtration, psychic sensitivity, (Royalty) psycasting recovery rate
             if (IsCheapIntervalTick(Props.tickInterval))
             {
                 if(tripValue > Props.neutralityThreshold)
