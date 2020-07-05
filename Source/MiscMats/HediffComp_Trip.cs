@@ -12,7 +12,7 @@ namespace MiscMats
     class HediffComp_Trip : HediffComp
     {
         public HediffCompProperties_Trip Props => (HediffCompProperties_Trip)base.props;
-        public float B => -1 * Mathf.Log(0.1f) / (Props.hoursForTenPercentMoodWeight * GenDate.TicksPerHour);
+        public float B => -Mathf.Log(0.1f) / (Props.hoursForTenPercentMoodWeight * GenDate.TicksPerHour);
         // if negative, bad trip; if positive, good trip; if 0 or close to it, neutral trip
         public float tripValue;
         private int hashOffset = 0;
@@ -21,7 +21,7 @@ namespace MiscMats
         {
             get
             {
-                if (tripValue < (-1 * Props.neutralityThreshold)) return 0;
+                if (tripValue < (-Props.neutralityThreshold)) return 0;
                 if (tripValue > Props.neutralityThreshold) return 2;
                 return 1;
             }
@@ -64,9 +64,9 @@ namespace MiscMats
                     if (Rand.Value < Props.baseInspirationChancePerInterval * Mathf.Sqrt(tripValue))
                         parent.pawn.mindState.inspirationHandler.TryStartInspiration_NewTemp(GetRandomAvailableInspirationDef(), "D9MM_InspirationFromTrip".Translate());
                 }
-                else if(tripValue < (-1 * Props.neutralityThreshold))
+                else if(tripValue < (-Props.neutralityThreshold))
                 {
-                    if (Rand.Value < Props.baseMentalStateChancePerInterval * Mathf.Sqrt(-1 * tripValue))
+                    if (Rand.Value < Props.baseMentalStateChancePerInterval * Mathf.Sqrt(-tripValue))
                         parent.pawn.mindState.mentalStateHandler.TryStartMentalState(GetRandomAvailableMentalStateDef(), 
                             "D9MM_MentalStateFromTrip".Translate(), 
                             causedByMood: false, 
