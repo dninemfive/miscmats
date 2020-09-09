@@ -37,7 +37,7 @@
       <outcomeDoers>
         <li Class="IngestionOutcomeDoer_GiveHediff">
           <hediffDef>D9MM_DreamrootHigh</hediffDef>
-          <severity>0.6</severity>
+          <severity>0.3</severity>
         </li>
         <li Class="IngestionOutcomeDoer_OffsetNeed">
           <need>Rest</need>
@@ -132,10 +132,10 @@
 			</capMods>
 		</li>
 		<li>
-			<minSeverity>0.8</minSeverity>
+			<minSeverity>0.6</minSeverity>
 			<label>stupefied</label>
 			<painFactor>0.8</painFactor>
-			<socialFightChanceFactor>0</socialFightChanceFactor>
+			<socialFightChanceFactor>0.3</socialFightChanceFactor>
 			<restFallFactor>1.25</restFallFactor>
 			<statOffsets>
 				<PsychicSensitivity>1</PsychicSensitivity>
@@ -149,6 +149,26 @@
 				<li>
 					<capacity>BloodFiltration</capacity>
 					<offset>0.35</offset>
+				</li>
+			</capMods>
+		</li>
+		<li>
+			<minSeverity>0.85</minSeverity>
+			<label>catatonic</label>
+			<painFactor>0.3</painFactor>
+			<socialFightChanceFactor>0</socialFightChanceFactor>
+			<statOffsets>
+				<PsychicSensitivity>1.5</PsychicSensitivity>
+				<MeditationFocusGain MayRequire="Ludeon.RimWorld.Royalty">0.6</MeditationFocusGain>
+			</statOffsets>
+			<capMods>
+				<li>
+					<capacity>Consciousness</capacity>
+					<postFactor>0.2</postFactor>
+				</li>
+				<li>
+					<capacity>BloodFiltration</capacity>
+					<offset>0.4</offset>
 				</li>
 			</capMods>
 		</li>

@@ -33,6 +33,7 @@ namespace MiscMats
             List<Thought> thoughts = new List<Thought>();
             base.parent.pawn.needs.mood.thoughts.GetAllMoodThoughts(thoughts);
             tripValue = 0;
+            // todo: move this into its own method; recalculate every so often
             foreach(Thought th in thoughts)
             {
                 if (th is Thought_Memory thm)
