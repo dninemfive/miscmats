@@ -111,8 +111,8 @@
 			</capMods>
 		</li>
 		<li>
-			<minSeverity>0.05</minSeverity>
-			<label>intoxicated</label>
+			<minSeverity>0.25</minSeverity>
+			<label>tripping</label>
 			<painFactor>0.9</painFactor>
 			<socialFightChanceFactor>0.6</socialFightChanceFactor>
 			<restFallFactor>1.1</restFallFactor>
