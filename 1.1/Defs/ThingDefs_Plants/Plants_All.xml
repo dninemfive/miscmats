@@ -10,7 +10,7 @@
 			<Beauty>10</Beauty>
 		</statBases>
 		<graphicData>
-			<texPath>Things/Plants/Dreamroot</texPath>
+			<texPath>Plants/Dreamroot</texPath>
 			<graphicClass>Graphic_Random</graphicClass>
 		</graphicData>
 		<selectable>true</selectable>
@@ -44,7 +44,7 @@
 			<Nutrition>0</Nutrition>
 		</statBases>
 		<graphicData>
-			<texPath>Things/Plants/Stoneseed</texPath>
+			<texPath>Plants/Stoneseed</texPath>
 			<graphicClass>Graphic_Random</graphicClass>
 		</graphicData>
 		<selectable>true</selectable>
