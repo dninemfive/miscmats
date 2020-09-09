@@ -12,8 +12,8 @@
 		<techLevel>Medieval</techLevel>
 		<researchViewX>0</researchViewX>
 		<researchViewY>0</researchViewY>
+		<tab>D9MM_ResearchTab</tab>
 	</ResearchProjectDef>
-	<!-- TODO: some way of making this available to tribals? -->
 	<ResearchProjectDef>
 		<defName>D9MM_NeutroamineProduction</defName>
 		<label>neutroamine production</label>
@@ -21,10 +21,11 @@
 		<baseCost>1200</baseCost>
 		<techLevel>Industrial</techLevel>
 		<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
-		<researchViewX>0</researchViewX>
+		<researchViewX>1</researchViewX>
 		<researchViewY>0</researchViewY>
 		<prerequisites>
 		  <li>MedicineProduction</li>
-		</prerequisites>
+		</prerequisites>		
+		<tab>D9MM_ResearchTab</tab>
 	</ResearchProjectDef>
 </Defs>
