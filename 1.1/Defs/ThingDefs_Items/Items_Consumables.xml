@@ -23,7 +23,7 @@
       <joyKind>Chemical</joyKind>
       <joy>0.6</joy>
       <baseIngestTicks>240</baseIngestTicks>
-      <nurseable>true</nurseable>
+      <nurseable>false</nurseable>
       <drugCategory>Social</drugCategory>
       <ingestSound>Ingest_Drink</ingestSound>
       <ingestHoldOffsetStanding>
