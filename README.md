@@ -1,5 +1,5 @@
 # Miscellaneous Materials
-![version](https://img.shields.io/badge/RimWorld-1.1-brightgreen.svg) ![modVersion](https://img.shields.io/github/v/release/dninemfive/miscmats?color=brightgreen&label=Mod%20version) ![license](https://img.shields.io/badge/License-MIT-brightgreen.svg)
+![version](https://img.shields.io/badge/RimWorld-1.2-brightgreen.svg) ![modVersion](https://img.shields.io/github/v/release/dninemfive/miscmats?color=brightgreen&label=Mod%20version) ![license](https://img.shields.io/badge/License-MIT-brightgreen.svg)
 
 [![steamlink](https://raster.shields.io/steam/downloads/1610392978.png?color=blue&label=Workshop&logo=steam)](https://steamcommunity.com/sharedfiles/filedetails/?id=1610392978) ![githubdls](https://img.shields.io/github/downloads/dninemfive/miscmats/total?color=blue&label=Github&logo=github)
 
