@@ -10,7 +10,7 @@
 			<Beauty>10</Beauty>
 		</statBases>
 		<graphicData>
-			<texPath>Things/Plant/DreamvinePlant</texPath>
+			<texPath>Things/Plants/Dreamroot</texPath>
 			<graphicClass>Graphic_Random</graphicClass>
 		</graphicData>
 		<selectable>true</selectable>
@@ -48,7 +48,7 @@
 		</statBases>
 		<thingClass>MiscMats.PlantInvFert</thingClass>
 		<graphicData>
-			<texPath>Things/Plant/Stoneseed</texPath>
+			<texPath>Things/Plants/Stoneseed</texPath>
 			<graphicClass>Graphic_Random</graphicClass>
 		</graphicData>
 		<selectable>true</selectable>

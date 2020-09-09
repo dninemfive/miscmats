@@ -163,17 +163,17 @@
     <stages>
       <li>
         <label>bad trip</label>
-        <description>I feel strange and can hear otherworldly voices. Somehow, I'm not worried.</description>
+        <description>I am overcome with terrifying visions and a sense of existential dread.</description>
         <baseMoodEffect>-25</baseMoodEffect>
       </li>
       <li>
-        <label>mediocre trip</label>
+        <label>tripping</label>
         <description>I feel strange and can hear otherworldly voices. Somehow, I'm not worried.</description>
         <baseMoodEffect>3</baseMoodEffect>
       </li>
       <li>
         <label>good trip</label>
-        <description>I feel strange and can hear otherworldly voices. Somehow, I'm not worried.</description>
+        <description>Everything's different in a fascinating way. I feel like I'm communing with a higher plane of existence.</description>
         <baseMoodEffect>25</baseMoodEffect>
       </li>
     </stages>
