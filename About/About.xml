@@ -11,6 +11,12 @@
 	<description>Adds several new resources, currently including a psychogenic neutroamine precursor and a "plant" which grows stone.</description>
 	<modDependencies>
 		<li>
+			<displayName>Harmony</displayName>
+			<packageId>brrainz.harmony</packageId>
+			<downloadUrl>https://github.com/pardeike/HarmonyRimWorld/releases</downloadUrl>
+			<steamWorkshopUrl>steam://url/CommunityFilePage/2009463077</steamWorkshopUrl>
+		</li>
+		<li>
 			<displayName>D9 Framework</displayName>
 			<packageId>dninemfive.d9framework</packageId>
 			<downloadUrl>https://github.com/dninemfive/d9framework/releases</downloadUrl>
