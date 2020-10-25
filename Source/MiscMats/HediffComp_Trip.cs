@@ -29,25 +29,14 @@ namespace MiscMats
 
         public override void CompPostMake()
         {
-            base.CompPostMake();
-            List<Thought> thoughts = new List<Thought>();
-            base.parent.pawn.needs.mood.thoughts.GetAllMoodThoughts(thoughts);
-            tripValue = 0;
-            // todo: move this into its own method; recalculate every so often
-            foreach(Thought th in thoughts)
-            {
-                if (th is Thought_Memory thm)
-                {
-                    // exponential decay of mood effect, so (by default) six-hour-old thoughts are worth 10% as much as fresh ones. Basically, current mindset -> trip quality
-                    tripValue += thm.MoodOffset() * Mathf.Pow((float)Math.E, B * thm.age);
-                }
-                else
-                {
-                    // thoughts without an age are simply weighted at 10% their strength
-                    tripValue += th.MoodOffset() * 0.1f;
-                }
-            }
+            base.CompPostMake();            
             hashOffset = parent.pawn.thingIDNumber.HashOffset();
+            CalculateTripValue();
+        }
+
+        public override string CompDebugString()
+        {
+            return "Trip value: " + tripValue;
         }
 
         public override void CompPostTick(ref float severityAdjustment)
@@ -60,6 +49,7 @@ namespace MiscMats
             //  - stat offsets: reduced consciousness; increased blood filtration, psychic sensitivity, (Royalty) psycasting recovery rate
             if (IsCheapIntervalTick(Props.tickInterval))
             {
+                if (Rand.Value < Props.recalcChancePerInterval) CalculateTripValue();
                 if(tripValue > Props.neutralityThreshold)
                 {
                     if (Rand.Value < Props.baseInspirationChancePerInterval * Mathf.Sqrt(tripValue))
@@ -72,6 +62,26 @@ namespace MiscMats
                             "D9MM_MentalStateFromTrip".Translate(), 
                             causedByMood: false, 
                             transitionSilently: Props.transitionMentalStateSilently);
+                }
+            }
+        }
+
+        public void CalculateTripValue()
+        {
+            List<Thought> thoughts = new List<Thought>();
+            base.parent.pawn.needs.mood.thoughts.GetAllMoodThoughts(thoughts);
+            tripValue = 0;
+            foreach (Thought th in thoughts)
+            {
+                if (th is Thought_Memory thm)
+                {
+                    // exponential decay of mood effect, so (by default) six-hour-old thoughts are worth 10% as much as fresh ones. Basically, current mindset -> trip quality
+                    tripValue += thm.MoodOffset() * Mathf.Pow((float)Math.E, B * thm.age);
+                }
+                else
+                {
+                    // thoughts without an age are simply weighted at 10% their strength
+                    tripValue += th.MoodOffset() * 0.1f;
                 }
             }
         }
@@ -99,6 +109,7 @@ namespace MiscMats
         public float baseInspirationChancePerInterval = 0.01f;
         public float baseMentalStateChancePerInterval = 0.1f;
         public bool transitionMentalStateSilently = true;
+        public float recalcChancePerInterval = 0.25f;
 #pragma warning restore CS0649
         public HediffCompProperties_Trip()
         {
