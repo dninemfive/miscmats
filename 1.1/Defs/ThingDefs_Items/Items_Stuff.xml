@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <ThingDef ParentName="ResourceBase">
+    <defName>D9MM_Mythril</defName>
+    <label>mythril</label>
+    <description>A legendary metal ideal for creating weapons and armor, the recipe lost to time. Mythril is light, ductile, and can keep an impressively sharp point.\n\nItems made from mythril are often considered to be a class above their counterparts.</description>
+    <graphicData>
+      <texPath>Things/Item/Resource/Steel</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <soundInteract>Metal_Drop</soundInteract>
+    <soundDrop>Metal_Drop</soundDrop>
+    <statBases>
+      <MarketValue>1.9</MarketValue>
+      <Mass>0.5</Mass>
+      <StuffPower_Armor_Sharp>1.25</StuffPower_Armor_Sharp> <!-- vs Plasteel 1.14 -->
+      <StuffPower_Armor_Blunt>0.6</StuffPower_Armor_Blunt>  <!-- vs Plasteel 0.55 -->
+      <StuffPower_Armor_Heat>0.60</StuffPower_Armor_Heat>   <!-- vs Plasteel 0.65 -->
+      <StuffPower_Insulation_Cold>2</StuffPower_Insulation_Cold> <!-- vs Plasteel 3 -->
+      <StuffPower_Insulation_Heat>1</StuffPower_Insulation_Heat> <!-- vs Plasteel 0 -->
+      <SharpDamageMultiplier>1.15</SharpDamageMultiplier>  <!-- vs Plasteel 1.1 -->
+      <BluntDamageMultiplier>0.75</BluntDamageMultiplier> <!-- vs Plasteel 0.9 -->
+    </statBases>
+    <useHitPoints>false</useHitPoints>
+    <healthAffectsPrice>false</healthAffectsPrice>
+    <thingCategories>
+      <li>ResourcesRaw</li>
+    </thingCategories>
+    <burnableByRecipe>false</burnableByRecipe>
+    <smeltable>true</smeltable>
+    <stuffProps>
+      <categories>
+        <li>Metallic</li>
+      </categories>
+      <commonality>0.01</commonality>
+      <constructEffect>ConstructMetal</constructEffect>
+      <color>(240,240,230)</color>
+      <soundImpactStuff>BulletImpact_Metal</soundImpactStuff>
+      <soundMeleeHitSharp>MeleeHit_Metal_Sharp</soundMeleeHitSharp>
+      <soundMeleeHitBlunt>MeleeHit_Metal_Blunt</soundMeleeHitBlunt>
+      <statFactors>
+        <MaxHitPoints>4</MaxHitPoints> <!-- vs Plasteel 2.8 -->
+        <Beauty>1.25</Beauty> <!-- vs Plasteel 1 -->
+        <Flammability>0</Flammability>
+		<WorkToMake>2.8</WorkToMake>
+        <WorkToBuild>3</WorkToBuild>
+        <MeleeWeapon_CooldownMultiplier>0.6</MeleeWeapon_CooldownMultiplier> <!-- vs Plasteel 0.8 -->
+      </statFactors>
+    </stuffProps>
+    <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+	<modExtensions>
+		<li Class="D9Framework.CompsToAddWhenStuff">
+			<comps><li Class="MiscMats.CompProperties_QualityChange"/></comps>
+		</li>
+	</modExtensions>
+  </ThingDef>
+</Defs>
