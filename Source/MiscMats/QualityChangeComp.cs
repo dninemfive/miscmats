@@ -18,9 +18,8 @@ namespace MiscMats
 
         public override void PostPostMake()
         {
-            int offset = Props.qualityChange.RandomInRange;
             CompQuality comp = base.parent.GetComp<CompQuality>();
-            QualityCategory offsetQuality = (QualityCategory)Mathf.Clamp((int)comp.Quality + offset, (int)QualityCategory.Awful, (int)QualityCategory.Legendary);
+            QualityCategory offsetQuality = (QualityCategory)Mathf.Clamp((int)comp.Quality + Props.qualityChange, (int)QualityCategory.Awful, (int)QualityCategory.Legendary);
             // Will regenerate art in colony context in the MakeRecipeProducts patch
             comp.SetQuality(offsetQuality, ArtGenerationContext.Outsider);
             base.parent.AllComps.Remove(this);
@@ -29,7 +28,7 @@ namespace MiscMats
     public class CompProperties_QualityChange : CompProperties
     {
 #pragma warning disable CS0649
-        public IntRange qualityChange;
+        public int qualityChange = 1;
 #pragma warning restore CS0649
 
         public CompProperties_QualityChange()
