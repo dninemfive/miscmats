@@ -69,7 +69,7 @@
 			<harvestMinGrowth>0.98</harvestMinGrowth> <!-- these can only ever yield one chunk, so avoid players cheesing yields -->
 			<harvestFailable>false</harvestFailable>
 			<topWindExposure>0</topWindExposure>
-			<growDays>18</growDays>
+			<growDays>9</growDays>
 			<sowMinSkill>11</sowMinSkill>
 			<sowResearchPrerequisites>
 				<li>D9MM_Stoneseed</li>
